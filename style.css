@@ -1,0 +1,387 @@
+/* Universal Display */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Ceritanya margin tailwind */
+.mt-10 {
+  margin-top: -5rem;
+}
+
+mt-20 {
+  margin-top: 20px;
+}
+
+/* Section cover */
+#cover {
+  background-image: url(assets/coverimg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Dancing Scripts", Poppins;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Right Overflow */
+.top-r-overflow {
+  position: absolute;
+  opacity: 0.7;
+  height: 45vh;
+  right: -150px;
+  top: -75px;
+  transform: scaleX(-1);
+}
+
+/* Top Left Overflow */
+.top-l-overflow {
+  position: absolute;
+  opacity: 0.7;
+  height: 45vh;
+  left: -150px;
+  top: -75px;
+}
+
+/* Bottom Right Overflow */
+.bottom-r-overflow {
+  position: absolute;
+  opacity: 0.7;
+  height: 35vh;
+  right: -150px;
+  bottom: -75px;
+  transform: scale(-1);
+}
+
+/* Bottom Left Overflow */
+.bottom-l-overflow {
+  position: absolute;
+  opacity: 0.7;
+  height: 35vh;
+  left: -150px;
+  bottom: -75px;
+  transform: scaleY(-1);
+}
+
+/* Style Title */
+.title {
+  transition-duration: 0.5s;
+  padding: 16px 40px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 20px;
+  display: inline-block;
+}
+
+.title:hover {
+  padding: 40px 60px;
+  background-color: #dbdbdbcd;
+  font-size: 20px;
+  color: lightcoral;
+}
+
+/* Style Button */
+.btn {
+  transition-duration: 0.5s;
+  padding: 16px 40px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn:hover {
+  padding: 20px 50px;
+  color: white;
+  background-color: lightcoral;
+}
+
+.btn-small {
+  margin: 5px;
+  transition-duration: 0.5s;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-small:hover {
+  padding: 10px 40px;
+  color: white;
+  background-color: lightcoral;
+}
+
+.btn-xs {
+  margin: 5px;
+  transition-duration: 0.5s;
+  padding: 2px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgba(171, 3, 3, 0.6);
+}
+
+.btn-xs:hover {
+  padding: 5px 15px;
+  color: white;
+  background-color: lightcoral;
+}
+
+/* Section 1 */
+#main {
+  background-image: url(assets/covermain.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200vh;
+  font-family: "Dancing Scripts", Poppins;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  padding: 10px;
+}
+
+.mini-overflow {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 35vh;
+  margin-top: -17rem;
+}
+
+.mini-overflow-bottom {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 35vh;
+  margin-top: -13rem;
+}
+
+.arabic {
+  text-align: center;
+  font-size: x-large;
+}
+
+.qoutes {
+  z-index: 5;
+  text-align: center;
+  font-size: medium;
+}
+
+.foto-24 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 30vh;
+}
+
+#profile {
+  margin: 15px;
+}
+
+.frame {
+  height: 35vh;
+  margin: 10px;
+}
+
+.bg-size {
+  margin: 1rem;
+  height: 35vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(226, 165, 75, 0.647);
+}
+
+i {
+  color: black;
+}
+i:hover {
+  color: rgb(119, 123, 175);
+}
+
+.detail-txt {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Section 2 */
+
+#event-detail {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f083836c;
+}
+
+/* Slide show */
+.slideshow {
+  width: 80%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Video Urang */
+.videoshow video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 30vh;
+}
+
+/* RSVP */
+#rsvp {
+  padding: 10px;
+  margin: 50px;
+}
+
+#rsvp h5 {
+  margin: 20px;
+}
+
+table,
+th,
+td {
+  border: 2px solid lightcoral;
+  border-collapse: collapse;
+}
+#rsvp thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-bottom: 2px solid lightcoral;
+  background-color: antiquewhite;
+}
+
+#rsvp tbody td {
+  padding: 12px 15px;
+  border-bottom: 2px solid lightcoral;
+  color: #333;
+  background-color: #fff;
+}
+
+#rsvp form {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  color: #333;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+#story {
+  margin: 20px;
+  display: block;
+  justify-content: center;
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  /* Optional hover effect for images */
+  img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+}
