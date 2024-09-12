@@ -15,13 +15,15 @@ body {
   margin-top: -5rem;
 }
 
-mt-20 {
+.mt-20 {
   margin-top: 20px;
 }
 
+/* mobile Display */
+
 /* Section cover */
 #cover {
-  background-image: url(assets/coverimg.png);
+  background-image: url(assets/images/coverimgbg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +142,7 @@ mt-20 {
 
 /* Section 1 */
 #main {
-  background-image: url(assets/covermain.png);
+  background-image: url(assets/images/covermain.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +165,7 @@ mt-20 {
   position: relative;
   display: flex;
   height: 35vh;
-  margin-top: -17rem;
+  margin-top: -15rem;
 }
 
 .mini-overflow-bottom {
@@ -225,8 +227,23 @@ i:hover {
 }
 
 /* Section 2 */
-
-#event-detail {
+#event {
+  background-image: url(assets/images/coverevent1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Dancing Scripts", Poppins;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#akad,
+#resepsi,
+#alamat {
   margin: 20px;
   padding: 20px;
   text-align: center;
@@ -318,7 +335,7 @@ td {
   background-color: #fff;
 }
 
-#rsvp form {
+.form {
   display: block;
   background-color: #fff;
   padding: 20px;
@@ -378,10 +395,45 @@ input[type="radio"] {
     color: #555;
     margin-bottom: 20px;
   }
+}
+/* Optional hover effect for images */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
 
-  /* Optional hover effect for images */
-  img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
+#gift {
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .note {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  select,
+  input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  .account-info {
+    text-align: left;
+    font-size: 14px;
+  }
+  .account-info p {
+    margin: 5px 0;
+  }
+  .account-number {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .account-name {
+    font-size: 14px;
   }
 }

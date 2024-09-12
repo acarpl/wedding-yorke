@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Wedding Of Mrs. Yorke and Mr. Yorke</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/65758c184d.js"
       crossorigin="anonymous"
@@ -13,10 +21,26 @@
   <body>
     <!-- Section Cover -->
     <div id="cover">
-      <img class="top-r-overflow" src="assets/asset-1.png" alt="" />
-      <img class="top-l-overflow" src="assets/asset-3.png" alt="" />
-      <img class="bottom-r-overflow" src="assets/asset-2.png" alt="" />
-      <img class="bottom-l-overflow" src="assets/asset-4.png" alt="" />
+      <img
+        class="top-r-overflow"
+        src="assets/images/asset-1.png"
+        alt="Top Right Overflow"
+      />
+      <img
+        class="top-l-overflow"
+        src="assets/images/asset-3.png"
+        alt="Top Left Overflow"
+      />
+      <img
+        class="bottom-r-overflow"
+        src="assets/images/asset-2.png"
+        alt="Bottom Right Overflow"
+      />
+      <img
+        class="bottom-l-overflow"
+        src="assets/images/asset-4.png"
+        alt="Bottom Left Overflow"
+      />
 
       <div class="title">
         <h3>The Wedding Of</h3>
@@ -32,17 +56,21 @@
       </a>
     </div>
     <!-- Section 1 -->
-
     <section id="main">
       <center>
-        <img class="mini-overflow" src="assets/asset-5.png" alt="" />
+        <img
+          class="mini-overflow"
+          src="assets/images/asset-5.png"
+          alt="Mini Overflow"
+        />
       </center>
       <div class="qoutes mt-10">
-        <strong>
-          <p class="arabic">
-            وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُوْنَ
-          </p></strong
-        >
+        <p class="arabic">
+          <strong
+            >وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ
+            تَذَكَّرُوْنَ</strong
+          >
+        </p>
         <p>
           Dan segala sesuatu
           <b
@@ -54,11 +82,15 @@
       </div>
 
       <section id="pengantin">
-        <img class="foto-24" src="/assets/coverimg.png" alt="bride and groom" />
-        <strong> <p class="arabic">Meet The Bride and Groom</p></strong>
+        <img
+          class="foto-24"
+          src="assets/images/coverimg.png"
+          alt="Bride and Groom"
+        />
+        <p class="arabic"><strong>Meet The Bride and Groom</strong></p>
         <div id="proile">
           <div class="profile-bride">
-            <img class="bg-size" src="assets/bride.png" alt="bride" />
+            <img class="bg-size" src="assets/images/bride.png" alt="Bride" />
             <div class="detail-txt">
               <a href="https://www.instagram.com/dajana_roncione/">
                 <i class="fa-brands fa-instagram"> @dajana_roncione</i>
@@ -71,130 +103,220 @@
             </div>
           </div>
           <div class="profile-groom">
-            <img class="bg-size" src="assets/groom.png" alt="groom" />
-          </div>
-          <div class="detail-txt">
-            <a href="https://www.instagram.com/thomyorke/">
-              <i class="fa-brands fa-instagram"> @thomyorke</i>
-            </a>
-            <p>Nama: Thom Yorke</p>
-            <p>Anak ke-1 dari Bapak Nigel Yorke dan Ibu Barbara Yorke</p>
-            <p>Zodiak: Libra</p>
+            <img class="bg-size" src="assets/images/groom.png" alt="Groom" />
+            <div class="detail-txt">
+              <a href="https://www.instagram.com/thomyorke/">
+                <i class="fa-brands fa-instagram"> @thomyorke</i>
+              </a>
+              <p>Nama: Thom Yorke</p>
+              <p>Anak ke-1 dari Bapak Nigel Yorke dan Ibu Barbara Yorke</p>
+              <p>Zodiak: Libra</p>
+            </div>
           </div>
         </div>
       </section>
     </section>
-    <center>
-      <img class="mini-overflow-bottom" src="assets/asset-5.png" alt="" />
-    </center>
+
     <section id="event">
-    <section id="event-detail">
-      <h3>Event Details</h3>
-      <h1>Akad:</h1>
-      <p>Tanggal: 18 September 2024</p>
-      <p>Waktu : 10.00-10.30 WIB</p>
-      <h1>Resepsi:</h1>
-      <p>Tanggal: 18 September 2024</p>
-      <p>Waktu : 10.30-17.00 WIB</p>
-      <p>Location : Grand Hyatt, Jakarta</p>
-      <a href="https://maps.app.goo.gl/6K6Co7NSPJpbTtnQA">
-        <button class="btn-small">Visit Location</button></a
-      >
-    </section>
-    <section id="gallery">
-      <div class="slideshow">
+      <center>
+        <img
+          class="mini-overflow-bottom"
+          src="assets/images/asset-5.png"
+          alt="Mini Overflow Bottom"
+        />
+      </center>
+      <div class="slider">
         <div class="slides">
           <div class="slide" id="slide1">
-            <img src="assets/Radiohead-wedding-sicily-1.webp" alt="Image 1" />
+            <section id="akad">
+              <h3>Akad</h3>
+              <p>Tanggal: 18 September 2024</p>
+              <p>Waktu: 10.00-10.30 WIB</p>
+            </section>
           </div>
           <div class="slide" id="slide2">
-            <img src="assets/Thom_Yorke_married.jpg" alt="Image 2" />
+            <section id="resepsi">
+              <h3>Resepsi</h3>
+              <p>Tanggal: 18 September 2024</p>
+              <p>Waktu: 10.30-17.00 WIB</p>
+            </section>
           </div>
           <div class="slide" id="slide3">
-            <img src="assets/Ok Computer.jpeg" alt="Image 3" />
-          </div>
-          </div>
-          <div class="videoshow">
-            <video controls src="#"></video>
+            <section id="alamat">
+              <h3>Lokasi</h3>
+              <p>Grand Hyatt, Jakarta</p>
+              <a href="https://maps.app.goo.gl/6K6Co7NSPJpbTtnQA">
+                <button class="btn-small">Visit Location</button>
+              </a>
+            </section>
           </div>
         </div>
-       
+      </div>
+      <section id="gallery">
+        <div class="slideshow">
+          <div class="slides">
+            <div class="slide" id="slide1">
+              <img
+                src="assets/images/Radiohead-wedding-sicily-1.webp"
+                alt="Image 1"
+              />
+            </div>
+            <div class="slide" id="slide2">
+              <img src="assets/images/Thom_Yorke_married.jpg" alt="Image 2" />
+            </div>
+            <div class="slide" id="slide3">
+              <img src="assets/images/Ok Computer.jpeg" alt="Image 3" />
+            </div>
+          </div>
+          <div class="videoshow">
+            <video controls src="assets/videos/pre-wedding.mp4"></video>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="rsvp">
+      <center>
+        <h5>Our Guest Stars</h5>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ed Sheran</td>
+              <td>Penyanyi</td>
+            </tr>
+            <tr>
+              <td>King Nassar</td>
+              <td>Penyanyi</td>
+            </tr>
+            <tr>
+              <td>Ringo The Beatles</td>
+              <td>Drummer</td>
+            </tr>
+            <tr>
+              <td>Gallager's Brother</td>
+              <td>OASIS</td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <section class="form">
+        <h2>RSVP</h2>
+        <form action="#" method="get">
+          <label for="nama">Nama Lengkap:</label> <br />
+          <input type="text" id="nama" name="nama" /> <br />
+          <label for="nomer">No telp:</label> <br />
+          <input type="number" id="nomer" name="phone" /> <br />
+          <label for="email">Email:</label> <br />
+          <input type="email" id="email" name="email" /> <br />
+          <label>Apakah anda bersedia hadir:</label> <br />
+          <input type="radio" name="kehadiran" id="hadir" value="hadir" />
+          <label for="hadir">Hadir</label>
+          <input type="radio" name="kehadiran" id="bolos" value="tidak hadir" />
+          <label for="bolos">Tidak Hadir</label> <br />
+          <label for="jumlah-tamu">Jumlah Tamu yang Hadir:</label>
+          <select name="jumlah-tamu" id="jumlah-tamu">
+            <option value="0">Tidak Hadir</option>
+            <option value="1">1 Orang</option>
+            <option value="2">2 Orang</option>
+            <option value="3">3 Orang</option>
+            <option value="4">4 Orang</option>
+          </select>
+        </form>
+        <a href="#gift"
+          ><button id="submit-btn" class="btn-xs">Submit</button></a
+        >
+      </section>
+    </section>
+
+    <center>
+      <section id="story">
+        <h3>Our Love Story</h3>
+        <div class="swiper-container love-story-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>Temenan nih ye</p>
+              <img
+                src="assets/images/Thom Yorke wedding in Sicily.webp"
+                alt="Friend"
+              />
+              <p>2020</p>
+            </div>
+            <div class="swiper-slide">
+              <p>Jadian nih ye</p>
+              <img
+                src="assets/images/Thom Yorke wedding in Sicily.webp"
+                alt="Tunangan"
+              />
+              <p>2024</p>
+            </div>
+            <div class="swiper-slide">
+              <p>Nikahan nih ye</p>
+              <img
+                src="assets/images/Thom Yorke wedding in Sicily.webp"
+                alt="Nikah"
+              />
+              <p>2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <section id="gift">
+      <div class="form">
+        <h1>Kirim Hadiah</h1>
+        <p class="note">
+          Catatan kado atau kata kata terimakasih untuk yang memberikan hadiah.
+          di menu (Amplop digital)
+        </p>
+
+        <!-- Direct Transfer Option -->
+        <select id="gift-select">
+          <option value="transfer">Direct Transfer</option>
+          <option value="gift">Kirim Kado</option>
+        </select>
+
+        <!-- Transfer Information -->
+        <div class="account-info" id="account-info">
+          <p>BCA</p>
+          <p class="account-number" id="bca-number">0660580697</p>
+          <p class="account-name">A/N Thomyorke</p>
+          <button onclick="copyText('bca-number')">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+          <br />
+          <p>Gopay</p>
+          <p class="account-number" id="gopay-number">085161193121</p>
+          <p class="account-name">A/N Rasya Falqi Gani</p>
+          <button onclick="copyText('gopay-number')">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+
+        <!-- Sending a Gift Option -->
+        <input
+          type="text"
+          id="gift-address"
+          placeholder="Abbey Road No.666"
+          disabled
+        />
       </div>
     </section>
-    <section id="rsvp">
-      <!-- table --> <center>
-       <h5>Our Guest Stars</h5>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Title</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Ed Sheran</td>
-            <td>Penyanyi</td>
-          </tr>
-          <tr>
-            <td>King Nassar</td>
-            <td>Penyanyi</td>
-          </tr>
-          <tr>
-            <td>Ringo The Beatles</td>
-            <td>Drummer</td>
-          </tr>
-          <tr>
-            <td>Gallager's Brother</td>
-            <td>OASIS</td>
-          </tr>
-        </tbody>
-      </table>
-    </center>
-      <!-- rsvp form -->
-      <h2>RSVP</h2>
-      <form action="#" method="post">
-        <label for="nama">Nama Lengkap:</label> <br />
-        <input type="text" id="nama" name="nama" /> <br />
-        <label for="nomer">No telp:</label> <br />
-        <input type="number" id="nomer" name="phone" /> <br />
-        <label for="email">Email:</label> <br />
-        <input type="email" id="email" name="email" /> <br />
-        <!-- radiohead -->
-        <label>Apakah anda bersedia hadir:</label> <br />
-        <input type="radio" name="kehadiran" id="hadir" value="hadir" />
-        <label for="hadir">Hadir</label>
-        <input type="radio" name="kehadiran" id="bolos" value="tidak hadir" />
-        <label for="bolos">tidak hadir</label> <br />
-        <!-- Select -->
-        <label for="jumlah-tamu">Jumlah Tamu yang Hadir:</label>
-        <select name="jumlah-tamu" id="jumlah-tamu">
-          <option value="1">Tidak Hadir</option>
-          <option value="1">1 Orang</option>
-          <option value="2">2 Orang</option>
-          <option value="3">3 Orang</option>
-          <option value="4">4 Orang</option>
-        </select>
-        <!-- Submit -->
-        <button class="btn-xs" type="submit">Submit</button>
-      </form>
+
+    <section>
+      <p>
+        Thank You! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ratione doloremque ea odit obcaecati tempore laborum nihil vel delectus,
+        perferendis asperiores quam dolorum veniam eum? Magnam harum eveniet
+        iusto aliquid quis?
+      </p>
     </section>
-  </section><center>
-    <section id="story">
-      <h3>our love story</h3>
-      <p>Temenan nih ye</p>
-        <img src="assets/Thom Yorke wedding in Sicily.webp" alt="friend" />
-        <p>2019</p>
-        <p>Jadian nih ye</p>
-        <img src="assets/Thom Yorke wedding in Sicily.webp" alt="tunangan" />
-        <p>2024</p>
-        <p>Nikahan nih ye</p>
-        <img src="assets/Thom Yorke wedding in Sicily.webp" alt="nikah" />
-        <p>2030</p>
-    </section> </center>
-    <section id="pesan">
-      <!-- tf & kado -->
-      <!-- pesan -->
-    </section>
+    <script src="script.js"></script>
   </body>
 </html>
